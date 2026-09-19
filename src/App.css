@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    font-family: "Arimo", sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #0D1B2A;
+    color: #fff;
+    box-shadow: 1px 1px #E5E7EB;
+    z-index: 999;
+}
+
+.navContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1320px;
+    width: 100%;
+}
+
+.navContent .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navContent .logo small{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+    /* color: #0D1B2A; */
+}
+
+.navContent .links ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: fit-content;
+}
+
+.navContent .links ul li{
+    display: inline;
+}
+
+.navContent .links ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: 0;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+h1.section-title{
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.productList{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.productList > *{
+  margin-bottom: 15px;
+}
+
+.productList .card{
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 8px 1px rgb(0 0 0 / 50%) !important;
+  min-width: 250px;
+  height: 100%;
+  text-align: left;
+}
+
+.productList .card img{
+  width: 100%;
+  max-height: 300px;
+  border: 1px solid #cecece;
+  padding: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.productList .card h2{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 5px 0 10px 0;
+}
+
+.productList .card small{
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.productList .card .productDetailsButton{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  background-color: palevioletred;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.productList .card .addCartButton:hover{
+  background-color: violet;
+}
+
+.inputFieldDiv{
+  padding: 15px;
+}
+
+.inputFieldDiv input[type="text"].searchValue{
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.movieBanner{
+  background-image: url('./assets/banner.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  width: 100%;
+  padding: 150px;
+}
+
+.movieList{
+  padding: 45px 90px;
+  background-color: #f5f7fb;
+  text-align: center;
+}
+
+.movieList h2{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  background-color: #0D1B2A;
+  color: #fff;
+}
+
+footer h2{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/*--- MODAL CSS ---*/
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modalContainer {
+    width: 500px;
+    /* height: 500px; */
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .modalContainer .title h1{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .modalContainer .body img{
+    max-width: 150px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .modalContainer .body p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 5px;
+  }
+
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    font-size: 18px;
+    text-align: left;
+  }
+  
+
+/*--------*/
